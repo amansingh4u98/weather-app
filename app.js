@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const cacheMiddleware = require('./cacheMiddleWare');
+const cacheMiddleware = require('./middlewares/cacheMiddleware.js');
 const routes = require('./routes');
 const app = express();
 const port = process.env.PORT;
