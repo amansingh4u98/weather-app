@@ -2,11 +2,14 @@ const express = require('express');
 const cors = require('cors');
 const cacheMiddleware = require('./middlewares/cacheMiddleware.js');
 const routes = require('./routes');
+const dotenv = require('dotenv')
 const app = express();
 const port = process.env.PORT;
 const path = require('path');
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./docs/swagger.json');
+
+dotenv.config();
 
 //Cors middleware
 app.use(cors());
