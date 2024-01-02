@@ -1,8 +1,6 @@
+require('dotenv').config();
 const axios = require('axios');
 const { processWeatherData } = require('../utils/weatherUtils');
-const dotenv = require('dotenv')
-
-dotenv.config();
 
 async function getWeatherData(city) {
   try {
