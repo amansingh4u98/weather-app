@@ -1,8 +1,9 @@
+//importing dependencies
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const cacheMiddleware = require('./middlewares/cacheMiddleware.js');
-const routes = require('./routes');
+const routes = require('./routes/routes.js');
 const app = express();
 const port = process.env.PORT;
 const path = require('path');

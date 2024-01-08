@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getWeatherData } = require('./controllers/weatherController');
+const { getWeatherData } = require('../controllers/weatherController');
 
 router.get('/weather/:city', async (req, res) => {
   try {
